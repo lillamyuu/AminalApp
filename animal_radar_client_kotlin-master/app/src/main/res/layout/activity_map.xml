@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity"
+    android:background="#003300">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <Button
+        android:id="@+id/getMyLoc"
+        android:layout_width="366dp"
+        android:layout_height="112dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="sendData"
+        android:rotation="8"
+        android:rotationX="0"
+        android:shadowRadius="0"
+        android:text="GOTCHA!"
+        android:textSize="30dp"
+
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/HelpText"
+        android:layout_width="256dp"
+        android:layout_height="375dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#bbbbbb"
+        android:text="Нажми на кнопку, когда увидишь дикую зверушку. Данные о ее местоположении отправятся на сервер. Водители будут готовы к встрече с ней и она не пострадает :)"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
